@@ -1,2 +1,3 @@
 # ipkg
-firewall all allow only KG zone
+Deny all but allow only KG zone
+Working in Ubuntu 16.04
