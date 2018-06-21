@@ -45,8 +45,8 @@ if __name__ == '__main__':
             for x in ips:
                 f.write('-A INPUT -s '+x.rstrip()+' -p tcp -m tcp --dport 80 -j ACCEPT\n')
                 f.write('-A INPUT -s '+x.rstrip()+' -p tcp -m tcp --dport 443 -j ACCEPT\n')
-            f.write('-A INPUT -s 172.16.80.0/24 -p tcp -m tcp --dport 80 -j ACCEPT\n')
-            f.write('-A INPUT -s 172.16.80.0/24 -p tcp -m tcp --dport 443 -j ACCEPT\n')
+            f.write('-A INPUT -s 10.0.1.0/24 -p tcp -m tcp --dport 80 -j ACCEPT\n') # Allow some additional network
+            f.write('-A INPUT -s 172.16.80.0/24 -p tcp -m tcp --dport 443 -j ACCEPT\n') # Allow some additional network
             f.write('-A INPUT -p tcp -m tcp --dport 80 -j DROP\n')
             f.write('-A INPUT -p tcp -m tcp --dport 443 -j DROP\n') 
             f.write('COMMIT\n')
