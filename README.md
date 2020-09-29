@@ -6,6 +6,7 @@ Working in Ubuntu 16.04
 
 How to use it:
 
+sudo apt install iptables-persistent
 
 git clone https://github.com/waxman435/ipkg && cd ipkg && chmod +x ipkg.py
 
