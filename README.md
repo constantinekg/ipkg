@@ -8,7 +8,7 @@ How to use it:
 
 sudo apt install iptables-persistent
 
-git clone https://github.com/waxman435/ipkg && cd ipkg && chmod +x ipkg.py
+git clone https://github.com/constantinekg/ipkg && cd ipkg && chmod +x ipkg.py
 
 sudo -s
 
